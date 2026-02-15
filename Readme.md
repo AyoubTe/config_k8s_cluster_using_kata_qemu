@@ -150,6 +150,10 @@ kubectl exec -it -n openwhisk <pod-name> -- uname -r
 
 ```
 
+<p align="center">
+  <img src="./docs/example.png" alt="Cluster 2 Architecture - Tests" width="700">
+</p>
+
 Alternatively, check for the QEMU hypervisor process on the worker node:
 
 ```bash
