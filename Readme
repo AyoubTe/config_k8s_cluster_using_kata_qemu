@@ -17,14 +17,18 @@ The project relies on two distinct Kubernetes clusters with identical hardware s
 * **Isolation:** Namespaces & Cgroups (Shared Host Kernel)
 * **Use Case:** Maximum performance, standard security.
 * **Architecture:**
-![cluster1](./docs/archi_cluster_1.png) 
+<p align="center">
+  <img src="./docs/archi_cluster_1.png" alt="Cluster 1 Architecture - runc based isolation" width="700">
+</p>
 
 ### 🟠 Cluster 2: Secure (Experimental)
 * **Runtime:** `Kata Containers` (v3.x Static Binaries)
 * **Hypervisor:** **QEMU** (Optimized for performance)
 * **Isolation:** Full Virtual Machine with a dedicated kernel.
 * **Use Case:** Strict Multi-tenancy, Maximum Security ("Hard Multi-tenancy").
-![cluster2](./docs/architecture_cluster2_kata_qemu.png)
+<p align="center">
+  <img src="./docs/architecture_cluster2_kata_qemu.png" alt="Cluster 2 Architecture - Kata Containers with QEMU" width="700">
+</p>
 
 #### Cluster 2 Hardware Setup
 The secure cluster consists of **5 Nodes** running Ubuntu 20.04.01 LTS.
